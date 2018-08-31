@@ -1,21 +1,7 @@
 # cards
 
-## Project setup
-```
-npm install
-```
+This small project is about practicing components communication.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# see live version at:
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+https://compassionate-pare-156c7b.netlify.com/
