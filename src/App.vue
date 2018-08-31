@@ -5,9 +5,9 @@
 
     </app-input>
     <div class="row">
-       <div class="col-sm-12">
+
       <app-card v-for="card in cards" :key="card.id" :cards="cards" :card="card"></app-card>
-      </div>
+
     </div>
     <app-info></app-info>
   </div>
@@ -24,7 +24,7 @@ export default {
   data: function() {
     return {
       cards: [
-        {id: 1, content: ' This is the first default card. Feel free to add some more custom cards!'}
+        {id: 1, content: 'Hey, I am a card'}
       ]
     }
   },

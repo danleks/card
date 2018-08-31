@@ -1,15 +1,31 @@
 <template>
-    <div class="card bg-light card-custom" @click="removeCard(card.id)">
-        <div class="card-header">This is card No. {{ card.id }}</div>
+<div class="col-md-2">
+
+    <!-- <h3>This is card No. {{ card.id }}</h3>
+    <p>{{ card.content }}</p> -->
+    <div class="card-deck">
+     <div class="card bg-warning " @click="removeCard(card.id)">
+         <div class="card-header">
+             <p class="card-text">
+                  {{ card.content }}
+             </p>
+         </div>
         <div class="card-body">
             <p class="card-text">
-                {{ card.content }}
+
+                My unique # is {{ card.id }}
             </p>
         </div>
     </div>
+</div>
+
+</div>
+
+
 </template>
 
 <script>
+
 export default {
 
     data: function() {
@@ -23,14 +39,16 @@ export default {
     methods: {
         removeCard(id) {
 
+            if (this.cards.length === 1) {
+                return;
+            }
 
-                let index = this.cards.findIndex(card => card.id === id);
-                this.cards.splice(index, 1);
-                console.log(this.cards);
+            let index = this.cards.findIndex(card => card.id === id);
+            this.cards.splice(index, 1);
 
+            
         }
-
-        }
+    }
 }
 </script>
 
@@ -39,6 +57,10 @@ export default {
     .card-custom {
         display: inline-block;
         width: 18%;
+
+        background-color: #f99557;
+        padding: 20px;
+        color: #fff;
 
         &:not(:last-child) {
             margin-right: 2%;
