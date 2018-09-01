@@ -56,17 +56,7 @@ export default {
 
 
 <style lang="scss" scoped>
-    .card-custom {
-        display: inline-block;
-        width: 18%;
-
-        background-color: #f99557;
-        padding: 20px;
-        color: #fff;
-
-        &:not(:last-child) {
-            margin-right: 2%;
+    .bg-warning:hover {
+             background-color: rgba(red, .1) !important;
         }
-
-    }
 </style>
