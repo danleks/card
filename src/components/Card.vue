@@ -34,7 +34,7 @@ export default {
         }
     },
 
-    props: ['cards', 'card'],
+    props: ['cards', 'card', 'progress'],
 
     methods: {
         removeCard(id) {
@@ -46,7 +46,9 @@ export default {
             let index = this.cards.findIndex(card => card.id === id);
             this.cards.splice(index, 1);
 
-            
+
+
+
         }
     }
 }
